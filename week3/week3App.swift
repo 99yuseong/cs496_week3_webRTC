@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 import KakaoSDKCommon
 import KakaoSDKAuth
 import FirebaseCore
@@ -26,3 +27,5 @@ struct week3App: App {
         }
     }
 }
+
+

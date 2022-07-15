@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422F8F232880FAB30001E1D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 422F8F222880FAB30001E1D4 /* GoogleService-Info.plist */; };
+		42E4573728801B7400DB4731 /* webRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E4573628801B7400DB4731 /* webRTCClient.swift */; };
+		42E4573A28803B1900DB4731 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42E4573928803B1900DB4731 /* FirebaseAnalyticsSwift */; };
+		42E4573C28803B1900DB4731 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42E4573B28803B1900DB4731 /* FirebaseFirestoreSwift */; };
+		42E457402880539300DB4731 /* MeetingRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E4573F2880539300DB4731 /* MeetingRoom.swift */; };
 		42E7CE49287EC665003F082C /* week3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E7CE48287EC665003F082C /* week3App.swift */; };
 		42E7CE4B287EC665003F082C /* MainView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E7CE4A287EC665003F082C /* MainView1.swift */; };
 		42E7CE4D287EC666003F082C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E7CE4C287EC666003F082C /* Assets.xcassets */; };
@@ -113,10 +118,12 @@
 				42E7CE48287EC665003F082C /* week3App.swift */,
 				42E7CE62287FB75F003F082C /* initialView.swift */,
 				42E45734287FF40F00DB4731 /* Intro */,
-				42E45733287FF3E900DB4731 /* Login */,
 				42E45735287FF46800DB4731 /* main */,
+				42E45733287FF3E900DB4731 /* Login */,
 				42E7CE4C287EC666003F082C /* Assets.xcassets */,
 				42E7CE4E287EC666003F082C /* Preview Content */,
+				42E4573628801B7400DB4731 /* webRTCClient.swift */,
+				42E4573F2880539300DB4731 /* MeetingRoom.swift */,
 			);
 			path = week3;
 			sourceTree = "<group>";
@@ -424,6 +431,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"week3/Preview Content\"";
 				DEVELOPMENT_TEAM = 5MMUAR6KN4;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = week3/Info.plist;
@@ -456,6 +464,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"week3/Preview Content\"";
 				DEVELOPMENT_TEAM = 5MMUAR6KN4;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = week3/Info.plist;
@@ -502,6 +511,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		42E4573828803B1900DB4731 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		42E7CE56287EEEF9003F082C /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
@@ -521,6 +538,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		42E4573928803B1900DB4731 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42E4573828803B1900DB4731 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		42E4573B28803B1900DB4731 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42E4573828803B1900DB4731 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
 		42E7CE57287EEEF9003F082C /* KakaoSDKAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 42E7CE56287EEEF9003F082C /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
