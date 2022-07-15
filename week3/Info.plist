@@ -7,5 +7,9 @@
 		<string>kakaokompassauth</string>
 		<string>kakaolink</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>$(PRODUCT_NAME) camera use</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string> $(PRODUCT_NAME) microphone use</string>
 </dict>
 </plist>
